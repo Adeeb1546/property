@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Cursor style</title>
+
+ <link rel="stylesheet" href="jQuery/jqueryui.css">
+ 
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  #draggable, #draggable2, #draggable3 { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 0 10px 10px 0; }
+  </style>
+  <script src="jQuery/jquery.js">></script>
+   <script src="jQuery/jquery2.js">></script>
+
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable({ cursor: "move", cursorAt: { top: 56, left: 56 } });
+    $( "#draggable2" ).draggable({ cursor: "crosshair", cursorAt: { top: -5, left: 15 } });
+    $( "#draggable3" ).draggable({ cursorAt: { bottom: 0 } });
+    $( "#draggable4" ).draggable({ cursor: "move", cursorAt: { top: 56, left: 56 } });
+    $( "#draggable5" ).draggable({ cursor: "crosshair", cursorAt: { top: -5, left: 15 } });
+    $( "#draggable6" ).draggable({ cursorAt: { bottom: 0 } });
+  } );
+  </script>
+</head>
+<body>
+  
+ 
+<div id="draggable">
+  <img src="images/work-3.jpg" alt="Lights" style="width:100%">
+</div>
+ 
+<div id="draggable2">
+ <img src="images/work-3.jpg" alt="Lights" style="width:100%">
+</div>
+ 
+<div id="draggable3">
+  <img src="images/work-3.jpg" alt="Lights" style="width:100%">
+</div>
+
+
+
+
+   
+
+    
+ 
+</body>
+</html>
